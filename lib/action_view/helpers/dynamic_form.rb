@@ -115,9 +115,9 @@ module ActionView
           options[:prepend_text] = args[0] || ''
           options[:append_text] = args[1] || ''
           options[:html_tag] = args[2] || 'div'
-          options[:css_class] = args[3] || 'formError'
+          options[:css_class] = args[3] || 'form-error'
         end
-        options.reverse_merge!(:prepend_text => '', :append_text => '', :html_tag => 'div', :css_class => 'formError')
+        options.reverse_merge!(:prepend_text => '', :append_text => '', :html_tag => 'div', :css_class => 'form-error')
 
         object = convert_to_model(object)
 
